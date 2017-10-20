@@ -33,6 +33,7 @@ function loadOBJ(container, options) {
   const reader = new FileReader();
   reader.onload = function onLoad(e) {
   objReader.parse(reader.result);
+  console.log(objReader.getNumberOfOutputPorts());
   const nbOutputs = objReader.getNumberOfOutputPorts();
     for (let idx = 0; idx < nbOutputs; idx++) {
       const source = objReader.getOutputData(idx);
