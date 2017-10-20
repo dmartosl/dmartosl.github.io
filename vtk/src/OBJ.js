@@ -44,7 +44,7 @@ function loadOBJ(container, options) {
     renderWindow.render();
   };
   console.log(options.objfile);
-  reader.readAsText(options.objfile);
+  reader.readAsDataURL(options.objfile);
 
 }
 
