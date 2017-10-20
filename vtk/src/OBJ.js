@@ -44,7 +44,9 @@ function loadOBJ(container, options) {
     renderWindow.render();
   };
   console.log(options.objfile);
-  reader.readAsDataURL(options.objfile);
+  var url = ["https://dmartosl.github.io/cilindro.obj"];
+  console.log(new Blob(url, {type: 'file'}));
+  reader.readAsText(new Blob(url, {type: 'file'}));
 
 }
 
